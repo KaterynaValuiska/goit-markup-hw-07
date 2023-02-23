@@ -36,6 +36,7 @@ ul {
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 
 .logo:hover {
@@ -46,7 +47,10 @@ ul {
     color: var(--accent-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+/* .container.header{
+    width: 1158px;
+    padding-left: 16px;
+} */
 .specifics-list {
     display: flex;
 }
@@ -71,6 +75,7 @@ ul {
 .section.team {
     background-color: var(--bac-secondary-color);
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .our-team {
@@ -82,8 +87,14 @@ ul {
 }
 
 .section-customers {
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.section {
+    color: var(--text-color);
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .customers {
@@ -125,6 +136,23 @@ ul {
     display: flex;
 }
 
+.btn-list {
+    display: flex;
+    margin-bottom: 72px;
+    justify-content: center;
+    gap: 24px;
+}
+
+.container.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1128px;
+    padding: 0;
+    margin: 0;
+
+}
+
 @media screen and (max-width: 767px) {
     .nav {
     display: none;
@@ -143,6 +171,7 @@ ul {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
     background-color: white;
     padding: 40px;
     transform: translateX(100%);
@@ -247,6 +276,10 @@ ul {
         margin-top: 72px;
         margin-right: 0;
 }
+
+.logo {
+    padding-left: 76px;
+}
 .logo-footer {
     margin-right: 0;
  }
@@ -259,43 +292,37 @@ ul {
 }
 .form-ft input {
     width: 396px;}
+
+.section {
+    padding-top: 0;
+    padding-bottom: 0;
+}    
+.container-portfolio {
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
-
-
-
-
-@media screen and (min-width: 768px) {
-.menu-container {
-    display: none;
+.btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    justify-content: flex-start;  
+    gap: 24px;
 }
-.mobile-burger {
-    display: none;
-}
-.curent::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    left: 0px;
-    top: 68px;
-    background: #404BBF;
-    border-radius: 2px;
-}
-
-}
-
-
 .container.header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 24px 16px;
     margin: 0;
-    
+
 }
+
+
+}
+
 
 header {
     border-bottom: 1px solid #E7E9FC;
@@ -306,7 +333,7 @@ header {
     top: 40px;
     right: 40px;
     width: 24px;
-        height: 24px;
+    height: 24px;
         background: #E7E9FC;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
@@ -316,6 +343,9 @@ header {
  }
 
 .mobile-burger {
+    position: absolute;
+    left: 380px;
+    right: 16px;
     background-color: transparent;
     border: none;
 }
@@ -492,17 +522,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     text-decoration: none;
 }
 
-.section {
-    color: var(--text-color);
-    padding-bottom: 120px;
-    padding-top: 120px;
-
-}
 .section.what-doing {
     padding-top: 0;
 }
-
-
 
 .our-team .item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -518,8 +540,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     margin-bottom: 72px;
        
 }
-
-
 
 
 .title-small {
@@ -697,19 +717,9 @@ margin-top: 0;
     margin-top: 32px;
     margin-left: 24px;
 }
-/* blok */
 
 
-.btn-list {
-    display: flex;
-    margin-bottom: 72px;
-    justify-content: center;
-}
-.btn-list .item+.item {
-    margin-left: 24px;
-}
 /* flex */
-
 
 .site-nav {
     display: flex;
@@ -781,10 +791,7 @@ margin-right: 40px;
 }
 
 
-
 /* псевдоелементи */
-
-
 
 .strategy::before {
    background-image: url(../images/antenna1.svg);
@@ -880,7 +887,6 @@ margin-right: 40px;
 
 }
 
-
 .icon-ft {
     width: 24px;
         height: 24px;
@@ -889,9 +895,6 @@ margin-right: 40px;
         fill: white;
 }
 
-
-
- 
 .customers-link:hover {
     border: 1px solid var(--accent-color);
 }
@@ -927,26 +930,189 @@ margin-right: 40px;
     fill: var(--accent-color);
     
 }
+ .curent::after {
+     position: absolute;
+     display: block;
+     content: "";
+     width: 100%;
+     height: 4px;
+     left: 0px;
+     top: 68px;
+     background: #404BBF;
+     border-radius: 2px;
+ }
+/* ------tablet-------- */
 
-/* ------media-------- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .menu-container {
+        display: none;
+    }
 
+    .mobile-burger {
+        display: none;
+    }
 
+    .specifics-list .item::before {
+        display: none;
+    }
 
-@media screen and (min-width: 768px) {
+    .container.header {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+    }
+
+    .site-nav {
+        margin-left: 120px;
+    }
+    .address {
+        flex-direction: column;
+        margin-left: 118px;
+        margin-right: 16px;
+    }
+    .address .item+.item {
+            margin-left: 0;
+            margin-top: 4px;
+        }
+    .section.what-doing {
+        display: none;
+    }
+        .section {
+            margin: 0;
+            padding: 0;
+        }
     .container {
             width: 768px;
+            padding: 96px 16px;
+            margin: auto;
+            
     }
+    
     .hero {
         height: 436px;
-        min-width: 768px;
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-tablet.jpg);
+        background-repeat: no-repeat;
+        text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        
     }
+
     .btn-hero {
             margin-top: 40px;
     }
 
-    
+    .hero-title {
+        width: 500px;
+        font-weight: 700;
+            font-size: 56px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.02em;
+    }
+
+    .specifics-list .item+.item {
+        margin-left: 0;
+        }
+
+    .specifics-list {
+        flex-wrap: wrap;
+    }
+    .specifics-list .item {
+    width: 356px;
+}
+.item .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.item.strategy {
+    margin-right: 24px;
+    margin-bottom: 72px;
+}
+.item.diligence {
+    margin-right: 24px;
+}
+.title-small.specifics {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+}
+
+.section.team {
+    padding: 0;
+}
+
+.our-team {
+    flex-wrap: wrap;  
+    justify-content: center; 
+}
+.our-team .item+.item {
+    margin-left: 0;
+}
+.our-team .item:nth-child(1) {
+    margin-right: 24px;
+    margin-bottom: 64px;
+}
+
+.our-team .item:nth-child(3) {
+    margin-right: 24px;
+}
+.section-customers {
+    padding: 0;
+}
+.customers {
+    width: 552px;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 552px;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-footer {
+    margin: 0;
+    margin-right: 24px;
+    margin-bottom: 72px;
+}
+.elements-ft {
+    flex-wrap: wrap;
+}
+.social-footer {
+    margin: 0;
+}
+.container-portfolio {
+    margin: auto;
+    padding-top: 64px;
+}
+.btn-list {
+    margin-bottom: 64px;
+}
+.portfolio {
+    flex-wrap: wrap;
+}
+
+.portfolio .item.flex {
+    margin-right: 0;
+}
+.portfolio .item.flex:nth-child(odd) {
+    margin-right: 7px;
+}
 
 }
 
@@ -960,19 +1126,37 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1200px) {
+
+    .menu-container {
+            display: none;
+        }
+    
+        .mobile-burger {
+            display: none;
+        }
     
     .container {
             width: 1158px;
+            padding: 0 15px;
+
         }
+    .container.header {
+        margin: auto;
+    }
     .hero {
-        height: 600px;
-        max-width: 1600px;
+        height: 524px;
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-images.jpg);
+        background-repeat: no-repeat;
     }
 
     .hero-title {
-        padding-top: 188px;
+        padding-top: 112px;
+        width: 498px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: 0.02em;
     }
 
     .btn-hero {
@@ -991,4 +1175,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-images@2x.jpg);
     }
+
+   
 }
+
