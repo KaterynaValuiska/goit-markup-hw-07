@@ -463,6 +463,8 @@ margin-bottom: 284px;
 
 .hero {
     background-color: var(--title-color);
+    background-position: center;
+    background-size: cover;
     text-align: center;
     height: 432px;
    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1144,7 +1146,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         }
     
     .container {
-            width: 1158px;
+            width: 1164px;
             padding: 0 15px;
 
         }
