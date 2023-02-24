@@ -211,6 +211,10 @@ ul {
     width: 100%;
 }
 
+.specifics-list .item+.item {
+    margin-left: 0;
+}
+
 .section.specifics-mobile {
     padding: 96px 0;
     margin: auto;
@@ -297,10 +301,12 @@ ul {
 }
 
 .logo-footer {
-    margin-right: 0;
-    
+    margin-right: 0;  
  }
 
+ .logo-footer .logo {
+    padding-left: 72px;
+ }
 
 .social-footer {
     margin-right: 0;   
@@ -362,7 +368,7 @@ header {
 
 .mobile-burger {
     position: absolute;
-    left: 380px;
+    top: 24px;
     right: 16px;
     background-color: transparent;
     border: none;
