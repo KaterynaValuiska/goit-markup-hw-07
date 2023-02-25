@@ -169,6 +169,14 @@ ul {
      border-radius: 2px;
  }
 
+  .link {
+      color: var(--text-color);
+      font-style: normal;
+      text-decoration: none;
+      padding-top: 24px;
+      padding-bottom: 24px;
+  }
+
 @media screen and (max-width: 767px) {
     .nav {
     display: none;
@@ -181,10 +189,13 @@ ul {
     display: none;
 }
  .container {
-     width: 428px;
+     width: 100%;
      margin: auto;
  }
  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -198,6 +209,10 @@ ul {
     
  }
  
+ .address-soc-mobile {
+    display: flex;
+    flex-direction: column;
+ }
  .menu-container.is-open {
     transform: translateX(0);
 }
@@ -216,7 +231,7 @@ ul {
 }
 
 .section.specifics-mobile {
-    padding: 96px 0;
+    padding: 96px 16px;
     margin: auto;
 }
 
@@ -264,8 +279,10 @@ ul {
 }
 
 .customers {
-    width: 396px;
+    width: 100%;
     flex-wrap: wrap;
+    padding-left: 16px;
+    justify-content: center;
 }
 
 .customers-link {
@@ -315,15 +332,14 @@ ul {
     text-align: center;
 }
 .form-ft input {
-    width: 396px;}
+    min-width: 300px;}
 
 .section {
     padding-top: 0;
     padding-bottom: 0;
 }    
 .container-portfolio {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 16px;
 }
 
 .btn-list {
@@ -390,7 +406,7 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
 margin-top: 40px;
-margin-bottom: 284px;
+margin-bottom: ;
 }
 
 .curent {
@@ -406,17 +422,17 @@ margin-bottom: 284px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: currentColor;
 
 }
 .address-mobile .item {
     margin-bottom: 48px;
 }
 
-.address-mobile .item:hover {
+.address-mobile .item:nth-child(1) {
     font-weight: 600;
-        font-size: 36px;
-        line-height: 40px;
+    font-size: 36px;
+    line-height: 40px;
     text-transform: capitalize;
     color: #4D5AE5;
 }
@@ -450,13 +466,6 @@ margin-bottom: 284px;
 
 /* address */
 
- .link {
-    color: var(--text-color);
-    font-style: normal;
-    text-decoration: none;
-    padding-top: 24px;
-        padding-bottom: 24px;
-}
 
 .link:hover,
 .link:focus {
@@ -489,13 +498,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .hero-title {
-    width: 350px;
+    width: ;
     color: #ffffff;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     margin: auto;
-   padding-top: 112px;
+    padding-top: 112px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -792,7 +801,7 @@ margin-right: 40px;
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 .portfolio .item {
@@ -974,7 +983,7 @@ margin-right: 40px;
     }
 
     .container.header {
-        width: 100%;
+        width: 768px;
         padding: 0 16px;
         margin: 0;
     }
