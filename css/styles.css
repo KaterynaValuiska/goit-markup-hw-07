@@ -406,7 +406,7 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
 margin-top: 40px;
-margin-bottom: ;
+
 }
 
 .curent {
@@ -498,7 +498,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .hero-title {
-    width: ;
+    width: 320px;
     color: #ffffff;
     font-weight: 700;
     font-size: 36px;
@@ -1135,8 +1135,13 @@ margin-right: 40px;
 .portfolio .item.flex {
     margin-right: 0;
 }
+.portfolio .item.flex:last-child {
+    margin-top: 40px;
+} 
+
+
 .portfolio .item.flex:nth-child(odd) {
-    margin-right: 7px;
+    margin-right: 12px;
 }
 
 }
