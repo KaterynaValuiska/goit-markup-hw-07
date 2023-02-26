@@ -223,7 +223,7 @@ ul {
 
 .specifics-list {
     display: inline;
-    width: 100%;
+    
 }
 
 .specifics-list .item+.item {
@@ -231,6 +231,7 @@ ul {
 }
 
 .section.specifics-mobile {
+    max-width: 410px;
     padding: 96px 16px;
     margin: auto;
 }
@@ -984,7 +985,8 @@ margin-right: 40px;
     .container.header {
         width: 768px;
         padding: 0 16px;
-        margin: 0;
+        margin: auto;
+       
     }
 
     .site-nav {
@@ -1173,7 +1175,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         margin: auto;
     }
     .hero {
-        height: 524px;
+        height: 600px;
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-images.jpg);
         background-repeat: no-repeat;
@@ -1181,7 +1183,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 
     .hero-title {
-        padding-top: 112px;
+        padding-top: 188px;
         width: 498px;
         font-weight: 700;
         font-size: 56px;
