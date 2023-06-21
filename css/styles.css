@@ -1017,6 +1017,7 @@ margin-right: 40px;
     
     .hero {
         height: 436px;
+        width: 768px;
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-tablet.jpg);
         background-repeat: no-repeat;
@@ -1176,6 +1177,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
     .hero {
         height: 600px;
+        width: 1164px;
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-images.jpg);
         background-repeat: no-repeat;
